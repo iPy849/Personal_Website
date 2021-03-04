@@ -1,0 +1,77 @@
+footer {
+  padding: 0 !important;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.last-container {
+  margin-bottom: 25%;
+}
+
+.collapsible-body ul {
+  padding: 0;
+}
+.collapsible-body a {
+  text-decoration: none;
+  color: black;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+.parallax h1, .parallax h2, .parallax h3, .parallax h4, .parallax h5, .parallax h6 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.price-cards .price * {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.social-media {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-media ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social-media ul li {
+  margin: 0.5rem;
+}
+
+[data-scroll] {
+  transition: opacity 2s;
+}
+
+[data-scroll=in] {
+  opacity: 1;
+}
+
+[data-scroll=out] {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .price-cards {
+    margin-bottom: 2rem;
+  }
+  .price-cards .price * {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
