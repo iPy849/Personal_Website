@@ -17,6 +17,15 @@ footer {
   color: black;
 }
 
+.collapsible-header {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.collapsible-header span {
+  display: flex;
+}
+
 .rounded {
   border-radius: 10px !important;
 }

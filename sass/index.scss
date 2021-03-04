@@ -20,6 +20,16 @@ footer{
     }
 }
 
+.collapsible-header {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+
+    span {
+        display: flex;
+    }
+}
+
 .rounded{
     border-radius: 10px !important;
 }

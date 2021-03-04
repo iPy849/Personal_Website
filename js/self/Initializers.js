@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var parallax = M.Parallax.init(
         document.querySelectorAll('.parallax')
     );
@@ -7,9 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.collapsible')
     );
 
-
     ScrollOut({
         targets: [".container", ".section"],
         once: true,
-      });
-  });
+    });
+    
+});
+
+
