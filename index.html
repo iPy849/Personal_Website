@@ -7,36 +7,43 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
-</head>
-<title>Document</title>
+    <title>Alejandro - WebA</title>
+    <link rel="shortcut icon" href="img/favicon.svg">
+<link rel="apple-touch-icon image_src" href="img/favicon.svg">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav>
-        <div class="nav-wrapper">
-            <form>
-                <div class="input-field">
-                    <input id="search" type="search" required>
-                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                    <i class="material-icons">close</i>
-                </div>
-
-            </form>
+        <div class="nav-wrapper navbar-fixed" style="padding: 0 50px;">
+          <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a class="brand-logo">WebA</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#prices">Ofertas</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
         </div>
-    </nav>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#about">Sobre mi</a></li>
+        <li><a href="#prices">Ofertas</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
     <!-- End Navbar -->
 
 
-    <div class="parallax-container">
+    <div class="parallax-container" style="height: 100vh;" id="about">
         <!-- Parallax photo1 -->
         <div class="parallax">
-            <img src="img/Dawn.jpg">
-            <h3 class="white-text">Tu servicio Web</h3>
+            <img src="img/Hero_image.jpg" width="100%" height="auto">
+            <h2 class="white-text" style="font-weight: bold;">Alejandro Ortega Desarrollador Web</h2>
         </div>
     </div>
-    <div class="section white">
+    <div class="adapatable white container" scrollout>
         <div class="row">
             <!-- content between parallax -->
             <div class="col s12 m6">
@@ -128,7 +135,7 @@
         <div class="parallax"><img src="img/beach.jpg"></div>
     </div>
 
-    <div class="section white">
+    <div class="adapatable white container" scrollout>
         <div class="row">
             <div class="col s12 m6 offset-m3">
                 <div class="card-panel red lighten-1
@@ -149,9 +156,9 @@
         </div>
     </div>
 
-    <div class="container white">
+    <div class="container white" id="prices">
         <h2 class="center-align">Ofertas</h2>
-        <div class="row">
+        <div class="row" scrollout>
             <div class="col s12 m4 price-cards">
                 <div class="card-panel deep-purple accent-1 rounded" data-tilt data-tilt-max="5" data-tilt-speed="1000" data-tilt-scale="1.1" data-tilt-reverse="true">
                     <h5 class="white-text center-align" style="font-weight: bold;">Página Web</h5>
@@ -206,10 +213,10 @@
         </div>
     </div>
 
-    <div class="section white last-container">
+    <div class="adapatable white last-container container" id="blog">
         <h2 class="center-align">Diferencias entre Sitio Web y Aplicación Web, te lo resumo así nomás</h2>
-        <center ><img class="responsive-img" src="img/webapp_vs_website.png"></center>
-        <div class="row">
+        <center ><img class="responsive-img" src="img/webapp_vs_website.png" scrollout></center>
+        <div class="row" scrollout>
             <div class="col s12 m6">
                 <div class="card-panel red lighten-1
                 ">
@@ -254,9 +261,9 @@
             <div class="container social-media">
                 By Alejandro Ortega
                 <ul>
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
+                    <li><a href="https://twitter.com/ipy849" social-twitter><i class="icon-social-twitter icons"></i></a></li>
+                    <li><a href="https://github.com/iPy849/" social-github><i class="icon-social-github icons"></i></a></li>
+                    <li><a href="https://www.fiverr.com/s2/75f34e6c16"><img src="./img/icon-fiverr.svg" alt="fiverr" width="20px" height="auto"></a></li>
                 </ul>
             </div>
         </div>
