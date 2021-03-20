@@ -46,6 +46,9 @@ nav{
 }
 
 .parallax{
+    display: flex;
+    align-items: flex-start;
+
     h1, h2, h3, h4, h5, h6 {
         position: absolute;
         left: 50%;
@@ -125,6 +128,40 @@ nav{
     transform: scale(0.8);
 }
 
+.parallax-custom-text {
+    font-weight: bold;
+    display: block;
+    width: fit-content;
+    text-shadow: 1px 1px 5px white;
+    animation: text-light_fx 2s ease-in-out alternate infinite;
+}
+
+@keyframes text-light_fx {
+    from {
+        text-shadow: 1px 1px 5px white;
+    }
+    to {
+        text-shadow: 1px 1px 10px rgb(240, 248, 1);
+    }
+  }
+
+.donate-button {
+    outline: none;
+    padding: 0 1rem;
+    border-radius: 5px;
+    transition: transform 0.2;
+    position: relative;
+}
+
+.donate-button:hover {
+    transform: scale(1.05);
+}
+
+.donate-button:active{
+    transform: scale(.9);
+    background-color: #6572b3 !important;
+}
+
 @media (max-width: 768px){
     footer{
         position: fixed; 
@@ -138,6 +175,14 @@ nav{
         }
 
         margin-bottom: 2rem;
+    }
+
+    .responsive-text{
+        font-size: 2.8rem;
+    }
+
+    .hero-text{
+        font-size: 2.8rem;
     }
 
 }

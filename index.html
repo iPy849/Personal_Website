@@ -9,51 +9,69 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
-    <title>Alejandro - WebA</title>
+    <title>Alejandro Ortega</title>
     <link rel="shortcut icon" href="img/favicon.svg">
-<link rel="apple-touch-icon image_src" href="img/favicon.svg">
+    <link rel="apple-touch-icon image_src" href="img/favicon.svg">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav>
-        <div class="nav-wrapper navbar-fixed" style="padding: 0 50px;">
+        <div class="nav-wrapper navbar-fixed"">
           <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <a class="brand-logo">WebA</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#about">Sobre mi</a></li>
             <li><a href="#prices">Ofertas</a></li>
             <li><a href="#blog">Blog</a></li>
+            <li>
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="RTXJUMPDYRAN6" />
+                    <input type="submit" class=" donate-button btn-small indigo accent-1 black-text" value="Dóname un café" >
+                </form>
+            </li>
           </ul>
         </div>
       </nav>
     
-      <ul class="sidenav" id="mobile-demo">
+      <ul class="sidenav" style="height: fit-content; border-bottom-right-radius: 15px; padding: 20px;" id="mobile-demo">
         <li><a href="#about">Sobre mi</a></li>
         <li><a href="#prices">Ofertas</a></li>
         <li><a href="#blog">Blog</a></li>
+        <li style="display: flex; justify-content: center;">
+            <span>
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="RTXJUMPDYRAN6" />
+                    <input type="submit" class=" donate-button btn-small indigo accent-1 black-text" value="Dóname un café" >
+                </form>
+            </span>
+        </li>
       </ul>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="RTXJUMPDYRAN6" />
+        <input type="submit" class=" donate-button btn-small indigo accent-1 black-text" value="Dóname un café" >
+        </form>
+    </nav>
     <!-- End Navbar -->
 
 
-    <div class="parallax-container" style="height: 100vh;" id="about">
+    <div class="parallax-container" style="height: 100vh;">
         <!-- Parallax photo1 -->
         <div class="parallax">
-            <img src="img/Hero_image.jpg" width="100%" height="auto">
-            <h2 class="white-text" style="font-weight: bold;">Alejandro Ortega Desarrollador Web</h2>
+            <img src="img/hero-bg.jpg" width="100%" height="100%">
+            <h2 class="white-text hero-text " style="font-weight: bold; text-shadow: 5px 5px 10px black;">Alejandro Ortega Desarrollador Web</h2>
         </div>
     </div>
     <div class="adapatable white container" scrollout>
-        <div class="row">
+        <div class="row" id="about">
             <!-- content between parallax -->
             <div class="col s12 m6">
                 <div class="card-panel deep-purple accent-1">
                     <h3 class="white-text">Quién soy?</h3>
                     <span class="white-text flow-text">
                         <p class="h-100">
-                            Soy Alejandro Ortega de cuarto semestre de Ingeniería Informática y Negocios Digitales 💻 en
-                            la <span class="" style="color: #ffb74d;">Universidad Anáhuac Cancún</span>. Soy de origen
-                            cubano 🇨🇺 y un apasionado por la tecnología de toda la vida.
+                            Soy Alejandro Ortega, un estudiante de cuarto semestre de Ingeniería Informática y Negocios Digitales 💻 de
+                            la <span style="color: #ffb74d;">Universidad Anáhuac Cancún</span>. Soy cubano 🇨🇺 y un apasionado por 
+                            los sistemas y tecnologías del área de Informática.
                         </p>
                     </span>
                 </div>
@@ -63,10 +81,10 @@
                     <h3 class="white-text">Qué hago?</h3>
                     <span class="white-text flow-text">
                         <p class="h-100">
-                            Me encargao del diseño e implementación de tu página o aplicación web. Haré un anális previo
-                            de las necesidades y requerimientos de tu nuevo sistema en orden de determinar las mejores
-                            opciones
-                            llevar a cabo el proyecto.
+                            Soy tu <span class="teal-text darken-4">Programador Web</span> y me
+                            encargaré del diseño e implementación de tu página o aplicación web.
+                            Para ello haré un anális previo de las necesidades y requerimientos de 
+                            tu proyecto para de determinar las mejores opciones.
                         </p>
                     </span>
                 </div>
@@ -74,7 +92,7 @@
             <div class="col s12">
                 <div class="card-panel blue accent-1">
                     <h3 class="white-text">Tecnologías que ocupo?</h3>
-                    <ul class="collapsible">
+                    <ul class="collapsible" style="border-radius: 10px; overflow: hidden;">
                         <li>
                             <div class="collapsible-header grey lighten-3">
                                 <span><i class="material-icons">developer_board</i>Web</span>
@@ -87,13 +105,10 @@
                                     <li>JavaScript</li>
                                     <li>JQuery</li>
                                     <li>SASS</li>
-                                    <li>Bootstrap4</li>
+                                    <li>Bootstrap</li>
                                     <li>Materialize</li>
                                     <li>Django</li>
-                                    <li>Selenium</li>
                                     <li>PHP</li>
-                                    <li>XAMPP</li>
-                                    <li>Nginx</li>
                                 </ul>
                             </div>
                         </li>
@@ -110,7 +125,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="collapsible-header grey lighten-3">
+                            <div class="collapsible-header grey lighten-3"> 
                                 <span><i class="material-icons">more_vert</i>Otros</span>
                                 <span><i class="material-icons">expand_more</i></span>
                             </div>
@@ -132,7 +147,10 @@
     </div>
     <div class="parallax-container">
         <!-- Parallax photo2 -->
-        <div class="parallax"><img src="img/beach.jpg"></div>
+        <div class="parallax">
+            <div class="parallax"><img src="img/transition.jpg" width="100%" ></div>
+            <h2 class="white-text parallax-custom-text" scrollout>Dar vida a tus ideas es mi trabajo</h2>
+        </div>
     </div>
 
     <div class="adapatable white container" scrollout>
@@ -154,15 +172,16 @@
                 </div>
             </div>
         </div>
+        <hr>
+
     </div>
 
     <div class="container white" id="prices">
-        <h2 class="center-align">Ofertas</h2>
+        <h2 class="center-align">Mis Ofertas</h2>
         <div class="row" scrollout>
             <div class="col s12 m4 price-cards">
                 <div class="card-panel deep-purple accent-1 rounded" data-tilt data-tilt-max="5" data-tilt-speed="1000" data-tilt-scale="1.1" data-tilt-reverse="true">
                     <h5 class="white-text center-align" style="font-weight: bold;">Página Web</h5>
-                    <hr>
                     <span class="white-text flow-text">
                         <ul class="price">
                             <li class="center-align">Diseño adaptable (responsivo)</li>
@@ -179,7 +198,6 @@
             <div class="col s12 m4 price-cards">
                 <div class="card-panel indigo accent-1 rounded" data-tilt data-tilt-max="5" data-tilt-speed="1000" data-tilt-scale="1.1" data-tilt-reverse="true">
                     <h5 class=" white-text center-align" style="font-weight: bold;">Sitio Web</h5>
-                    <hr>
                     <span class="white-text flow-text">
                         <ul class="price">
                             <li class="center-align">Diseño adaptable (responsivo)</li>
@@ -196,7 +214,6 @@
             <div class="col s12 m4 price-cards">
                 <div class="card-panel blue accent-1 rounded" data-tilt data-tilt-max="5" data-tilt-speed="1000" data-tilt-scale="1.1" data-tilt-reverse="true">
                     <h5 class="white-text center-align" style="font-weight: bold;">Aplicación Web</h5>
-                    <hr>
                     <span class="white-text flow-text">
                         <ul class="price">
                             <li class="center-align">Diseño adaptable (responsivo)</li>
@@ -211,10 +228,11 @@
                 <h4 class="center-align">2200mxn</h4>
             </div>
         </div>
+        <hr>
     </div>
-
+    
     <div class="adapatable white last-container container" id="blog">
-        <h2 class="center-align">Diferencias entre Sitio Web y Aplicación Web, te lo resumo así nomás</h2>
+        <h2 class="center-align responsive-text">Diferencias entre un Sitio Web y una Aplicación Web</h2>
         <center ><img class="responsive-img" src="img/webapp_vs_website.png" scrollout></center>
         <div class="row" scrollout>
             <div class="col s12 m6">
