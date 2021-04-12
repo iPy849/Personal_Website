@@ -7,90 +7,112 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
     <title>Alejandro Ortega</title>
-    <link rel="shortcut icon" href="img/favicon.svg">
-    <link rel="apple-touch-icon image_src" href="img/favicon.svg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
-    <!-- Navbar -->
-    <nav>
-        <div class="nav-wrapper navbar-fixed"">
-          <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#about">Sobre mi</a></li>
-            <li><a href="#prices">Ofertas</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li>
-                <form action="https://www.paypal.com/donate" method="post" target="_top">
-                    <input type="hidden" name="hosted_button_id" value="8JWGHTV6U6HC4" />
-                    <input type="submit" class=" donate-button btn-small indigo accent-1 black-text" value="Dóname un café" >
-                </form>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    
-      <ul class="sidenav" style="height: fit-content; border-bottom-right-radius: 15px; padding: 20px;" id="mobile-demo">
-        <li><a href="#about">Sobre mi</a></li>
-        <li><a href="#prices">Ofertas</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li style="display: flex; justify-content: center;">
-            <span>
-                <form action="https://www.paypal.com/donate" method="post" target="_top">
-                    <input type="hidden" name="hosted_button_id" value="RTXJUMPDYRAN6" />
-                    <input type="submit" class=" donate-button btn-small indigo accent-1 black-text" value="Dóname un café" style="display: block;">
-                </form>
-            </span>
-        </li>
-      </ul>
-      <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="hosted_button_id" value="RTXJUMPDYRAN6" />
-        <input type="submit" class=" donate-button btn-small indigo accent-1 black-text" value="Dóname un café" >
-        </form>
-    </nav>
-    <!-- End Navbar -->
-
+<body class="bg-white-green">
 
     <div class="parallax-container" style="height: 100vh;">
         <!-- Parallax photo1 -->
         <div class="parallax">
-            <img src="img/hero-bg.jpg" width="100%" height="100%">
-            <h2 class="white-text hero-text " style="font-weight: bold; text-shadow: 5px 5px 10px black;">Alejandro Ortega Desarrollador Web</h2>
+            <img src="img/bg-watercolor.png">
+            <h2 class="white-text hero-text" style="font-weight: bold; text-shadow: 5px 5px 10px black;"
+                data-text="Alejandro Ortega Desarrollador Web"></h2>
         </div>
     </div>
-    <div class="adapatable white container" scrollout>
+
+    <!-- Navbar -->
+    <nav class="bg-dark-green">
+        <div class="nav-wrapper navbar-fixed">
+            <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about">Sobre mi</a></li>
+                <!-- <li><a href="#prices">Ofertas</a></li> -->
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contáctame</a></li>
+
+                <!-- <li>
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="8JWGHTV6U6HC4" />
+                        <input type="submit" class=" donate-button btn-small indigo accent-1 black-text"
+                            value="Dóname un café">
+                    </form>
+                </li> -->
+            </ul>
+        </div>
+
+        <ul class="sidenav" style="height: fit-content; border-bottom-right-radius: 15px; padding: 20px;"
+            id="mobile-demo">
+            <li><a href="#about">Sobre mi</a></li>
+            <!-- <li><a href="#prices">Ofertas</a></li> -->
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contáctame</a></li>
+
+            <!-- <li style="display: flex; justify-content: center;">
+                <span>
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="RTXJUMPDYRAN6" />
+                        <input type="submit" class=" donate-button btn-small indigo accent-1 black-text"
+                            value="Dóname un café" style="display: block;">
+                    </form>
+                </span>
+            </li> -->
+        </ul>
+    </nav>
+    <!-- End Navbar -->
+    <div class="adapatable bg-white-green container" scrollout>
         <div class="row" id="about">
             <!-- content between parallax -->
             <div class="col s12 m6">
-                <div class="card-panel deep-purple accent-1">
+                <div class="card-panel bg-green">
                     <h3 class="white-text">Quién soy?</h3>
                     <span class="white-text flow-text">
                         <p class="h-100">
-                            Soy Alejandro Ortega, un estudiante de cuarto semestre de Ingeniería Informática y Negocios Digitales 💻 de
-                            la <span style="color: #ffb74d;">Universidad Anáhuac Cancún</span>. Soy cubano 🇨🇺 y un apasionado por 
+                            Soy Alejandro Ortega, un estudiante de cuarto semestre de Ingeniería Informática y Negocios
+                            Digitales 💻 de
+                            la <a href="https://www.anahuac.mx/cancun/">Universidad Anáhuac Cancún</a>. Soy cubano 🇨🇺
+                            y un apasionado por
                             los sistemas y tecnologías del área de Informática.
                         </p>
                     </span>
                 </div>
             </div>
             <div class="col s12 m6">
-                <div class="card-panel indigo accent-1">
+                <div class="card-panel bg-blue">
                     <h3 class="white-text">Qué hago?</h3>
                     <span class="white-text flow-text">
                         <p class="h-100">
-                            Soy tu <span class="teal-text darken-4">Programador Web</span> y me
+                            Soy Programador Web y me
                             encargaré del diseño e implementación de tu página o aplicación web.
-                            Para ello haré un anális previo de las necesidades y requerimientos de 
-                            tu proyecto para de determinar las mejores opciones.
+                            Haré un anális previo de las necesidades y requerimientos de
+                            tu proyecto para de determinar las mejores soluciones a tus necesidades.
                         </p>
                     </span>
                 </div>
             </div>
             <div class="col s12">
-                <div class="card-panel blue accent-1">
+                <div class="card-panel bg-red">
                     <h3 class="white-text">Tecnologías que ocupo?</h3>
                     <ul class="collapsible" style="border-radius: 10px; overflow: hidden;">
                         <li>
@@ -125,7 +147,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="collapsible-header grey lighten-3"> 
+                            <div class="collapsible-header grey lighten-3">
                                 <span><i class="material-icons">more_vert</i>Otros</span>
                                 <span><i class="material-icons">expand_more</i></span>
                             </div>
@@ -147,16 +169,18 @@
     </div>
     <div class="parallax-container">
         <!-- Parallax photo2 -->
-        <div class="parallax">
-            <div class="parallax"><img src="img/transition.jpg" width="100%" ></div>
-            <h2 class="white-text parallax-custom-text" scrollout>Dar vida a tus ideas es mi trabajo</h2>
+        <div class="parallax glitch">
+            <div class="parallax"><img src="img/transition.jpg" width="100%"></div>
+
+            <h2 class="white-text parallax-custom-text" style="word-break: keep-all;" scrollout>Mi servicio es dar vida
+                a tus ideas</h2>
         </div>
     </div>
 
-    <div class="adapatable white container" scrollout>
+    <div class="adapatable bg-white-green container" scrollout>
         <div class="row">
             <div class="col s12 m6 offset-m3">
-                <div class="card-panel red lighten-1
+                <div class="card-panel bg-red lighten-1
                 ">
                     <h4 class="white-text">Qué NO hago?</h4>
                     <span class="white-text flow-text">
@@ -176,7 +200,8 @@
 
     </div>
 
-    <div class="container white" id="prices">
+
+    <!-- <div class="container bg-white-green" id="prices">
         <h2 class="center-align">Mis Ofertas</h2>
         <div class="row" scrollout>
             <div class="col s12 m4 price-cards">
@@ -229,14 +254,14 @@
             </div>
         </div>
         <hr>
-    </div>
-    
-    <div class="adapatable white last-container container" id="blog">
+    </div> -->
+
+    <div class="adapatable bg-white-green container" id="blog">
         <h2 class="center-align responsive-text">Diferencias entre un Sitio Web y una Aplicación Web</h2>
-        <center ><img class="responsive-img" src="img/webapp_vs_website.png" scrollout></center>
+        <center><img class="responsive-img" src="img/webapp_vs_website.png" scrollout></center>
         <div class="row" scrollout>
             <div class="col s12 m6">
-                <div class="card-panel red lighten-1
+                <div class="card-panel bg-green lighten-1
                 ">
                     <h3 class="white-text">Sitio Web</h3>
                     <span class="white-text flow-text">
@@ -252,7 +277,7 @@
                 </div>
             </div>
             <div class="col s12 m6">
-                <div class="card-panel blue accent-1
+                <div class="card-panel bg-blue accent-1
                 ">
                     <h3 class="white-text">Aplicación Web</h3>
                     <span class="white-text flow-text">
@@ -273,15 +298,36 @@
         </div>
     </div>
 
+    <div class="adapatable bg-white-green container" id="contact">
+        <h2 class="center-align responsive-text">Contáctame</h2>
+        <div class="row" scrollout>
+            <div class="col s12 m12">
+                <form id="contact_form">
+                    <img src="img/profile.jpg">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Escríbeme un mensaje</label>
+                    </div>
+                </form>
+                <button class="waves-effect waves-light btn-small bg-green-hover" id="send_message" style="float: right;">Enviar
+                    <i class="material-icons right">send</i>
+                  </button>
+            </div>
+        </div>
+    </div>
+
     <!-- footer -->
-    <footer class="page-footer">
+    <footer class="page-footer bg-dark-green">
         <div class="footer-copyright" style="padding: 0;">
             <div class="container social-media">
                 By Alejandro Ortega
                 <ul>
-                    <li><a href="https://twitter.com/ipy849" social-twitter><i class="icon-social-twitter icons"></i></a></li>
-                    <li><a href="https://github.com/iPy849/" social-github><i class="icon-social-github icons"></i></a></li>
-                    <li><a href="https://www.fiverr.com/s2/75f34e6c16"><img src="./img/icon-fiverr.svg" alt="fiverr" width="20px" height="auto"></a></li>
+                    <li><a href="https://twitter.com/ipy849" social-twitter><i
+                                class="icon-social-twitter icons"></i></a></li>
+                    <li><a href="https://github.com/iPy849/" social-github><i class="icon-social-github icons"></i></a>
+                    </li>
+                    <li><a href="https://www.fiverr.com/s2/75f34e6c16"><img src="./img/icon-fiverr.svg" alt="fiverr"
+                                width="20px" height="auto"></a></li>
                 </ul>
             </div>
         </div>
@@ -292,6 +338,8 @@
     <script type="text/javascript" src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="js/self/Initializers.js"></script>
+    <script type="text/javascript" src="js/self/myJs.js"></script>
+
 
 </body>
 

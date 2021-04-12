@@ -1,21 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-green {
+  background-color: #7DD181;
+}
+
+.bg-green-hover {
+  background-color: #7DD181;
+}
+.bg-green-hover:hover, .bg-green-hover:active, .bg-green-hover:focus {
+  background-color: #5e9f67;
+}
+
+.bg-dark-green {
+  background-color: #5e9f67;
+}
+
+.bg-black-green {
+  background-color: #182825;
+}
+
+.bg-light-green {
+  background-color: #B6F9C9;
+}
+
+.bg-white-green {
+  background-color: #e7f6ee;
+}
+
+.bg-red {
+  background-color: #DB5461;
+}
+
+.bg-blue {
+  background-color: #6CCFF6;
+}
+
+body {
+  font-family: "Recursive", sans-serif;
+}
+
+.card-panel p, .card-panel ul {
+  font-size: 1.3rem;
+}
+
 footer {
   padding: 0 !important;
 }
 
 nav {
+  z-index: 10;
+  transition: 1s;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+nav[sticky] {
   position: fixed;
   top: 0;
+  opacity: 1;
   z-index: 10;
 }
 nav .nav-wrapper {
-  padding: 0 20px !important;
+  padding: 0 1rem !important;
 }
 nav .sidenav-trigger {
   justify-self: start;
-}
-
-.last-container {
-  margin-bottom: 25%;
 }
 
 .collapsible-body ul {
@@ -86,16 +139,10 @@ nav .sidenav-trigger {
   color: white;
 }
 .social-media ul [social-twitter]:hover {
-  color: #1DA1F2;
+  color: #009dfe;
 }
 .social-media ul [social-github]:hover {
   color: #b6b1b0;
-}
-.social-media ul li:hover {
-  background-color: #ef5350;
-  border-radius: 5px;
-  padding: 4px;
-  border: 1px solid #e53935;
 }
 
 [data-scroll] {
@@ -146,12 +193,6 @@ nav .sidenav-trigger {
 }
 
 @media (max-width: 768px) {
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-
   .price-cards {
     margin-bottom: 2rem;
   }
@@ -169,6 +210,50 @@ nav .sidenav-trigger {
 
   .donate-button {
     display: none;
+  }
+}
+.sidenav-overlay {
+  z-index: 9 !important;
+}
+
+.sidenav {
+  z-index: 10 !important;
+}
+
+#contact_form {
+  width: 100%;
+  align-items: flex-end;
+  display: flex;
+}
+#contact_form * {
+  display: block;
+}
+#contact_form > img {
+  width: 100px;
+  height: auto;
+  border-radius: 50px;
+  clip-path: circle(40%);
+  overflow: hidden;
+}
+#contact_form .input-field {
+  width: 100%;
+  height: fit-content;
+}
+
+@media screen and (max-width: 800px) {
+  .parallax img {
+    height: 100%;
+  }
+
+  #contact_form {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  nav {
+    justify-content: flex-start;
   }
 }
 

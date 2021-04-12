@@ -1,23 +1,98 @@
+html{
+    scroll-behavior: smooth;
+}
+
+//Colors
+$green: #7DD181;
+$dark-green: #5e9f67;
+$black-green: #182825;
+$light-green: #B6F9C9;
+$white-green: #e7f6ee;
+$blue: #6CCFF6;
+$red: #DB5461;
+
+.bg-green{
+    background-color: $green;
+}
+
+.bg-green-hover{
+    background-color: $green;
+
+    &:hover,
+    &:active,
+    &:focus{
+        background-color: $dark-green;
+    }
+}
+
+.bg-dark-green{
+    background-color: $dark-green;
+}
+
+.bg-black-green{
+    background-color: $black-green;
+}
+
+.bg-light-green{
+    background-color: $light-green;
+}
+
+.bg-white-green{
+    background-color: $white-green;
+}
+
+.bg-red{
+    background-color: $red;
+}
+
+.bg-blue{
+    background-color: $blue;
+}
+
+
+
+//End Colors
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+
+body {
+    font-family: 'Recursive', sans-serif;
+}
+//end Fonts
+
+.card-panel{
+    p, ul{
+        font-size: 1.3rem;
+    }
+}
+
 footer{
     padding: 0 !important; 
 }
 
 nav{
-    position: fixed;
-    top: 0;
     z-index: 10;
+    transition: 1s;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    &[sticky]{
+        position: fixed;
+        top: 0;
+        opacity: 1;
+        z-index: 10;
+    }
 
     .nav-wrapper{
-        padding: 0 20px !important;
+        padding: 0 1rem !important;
     }
 
     .sidenav-trigger{
         justify-self: start;
     }
-}
-
-.last-container{
-    margin-bottom: 25%;
 }
 
 .collapsible-body {
@@ -97,18 +172,11 @@ nav{
         }
 
         [social-twitter]:hover {
-            color: #1DA1F2;
+            color: #009dfe;
         }
 
         [social-github]:hover {
             color: #b6b1b0;
-        }
-
-        li:hover {
-            background-color: #ef5350;
-            border-radius: 5px;
-            padding: 4px;
-            border: 1px solid #e53935;
         }
 
     }
@@ -163,11 +231,6 @@ nav{
 }
 
 @media (max-width: 768px){
-    footer{
-        position: fixed; 
-        bottom: 0; 
-        width: 100%;
-    }
     
     .price-cards{
         .price * {
@@ -190,3 +253,61 @@ nav{
     }
 
 }
+
+.sidenav-overlay{
+    z-index: 9 !important;
+}
+
+.sidenav{
+    z-index: 10 !important;
+}
+
+// Input fields 
+#contact_form{
+    width: 100%;
+    align-items: flex-end;
+    display: flex;
+
+    *{
+        display: block;
+    }
+
+    > img{
+        width: 100px;
+        height: auto;
+        border-radius: 50px;
+        clip-path: circle(40%);
+        overflow: hidden;
+    }
+
+    .input-field{
+        width: 100%;
+        height: fit-content;
+    }
+}
+// end template
+
+@media screen and (max-width: 800px){
+
+
+    .parallax{
+        img {
+            height: 100%;
+        }
+    }
+
+    #contact_form{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+
+
+    }
+}
+
+@media screen and (max-width: 1000px){
+    nav{
+        justify-content: flex-start;
+    }
+}
+        
