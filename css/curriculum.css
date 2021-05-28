@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: lighter;
+  list-style: none;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+*[forced-green] {
+  background-color: #058e6e;
+}
+
+*[forced-center-x] {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+*[strong] {
+  font-weight: normal !important;
+}
+
+*[forced-list] {
+  padding-left: 1rem;
+  position: relative;
+}
+*[forced-list]::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0;
+  background-color: #343b40;
+  border-radius: 100%;
+}
+
+*[mobile] {
+  display: none;
+}
+
+*[not-mobile] {
+  display: block;
+}
+
+.custom-icon {
+  color: #cde8e2;
+  background-color: #343b40;
+  width: 25px;
+  height: 25px;
+  border-radius: 1px;
+  display: grid;
+  place-items: center;
+  margin-right: 0.6rem;
+}
+.custom-icon * {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: block;
+  width: 100vw;
+  max-width: 1000px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-x: hidden;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 10;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+}
+.overlay a {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #343b40;
+  box-shadow: 0 0 5px #343b40;
+  border: 1px solid #058e6e;
+  display: grid;
+  place-items: center;
+  border-bottom-right-radius: 35px;
+  text-decoration: none;
+}
+
+aside, main {
+  display: block;
+  height: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+aside h1, aside h2, aside h3, aside h4, aside h5, aside h6, main h1, main h2, main h3, main h4, main h5, main h6 {
+  padding-bottom: 0.8rem;
+}
+
+aside {
+  width: 25%;
+  background-color: #cde8e2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: scroll;
+}
+aside p, aside a, aside span {
+  font-size: 14px;
+}
+aside > section {
+  margin: 1rem 0.8rem;
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #343b40;
+}
+aside > section li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+aside > section li * {
+  margin-right: 5px;
+}
+
+main {
+  width: 75%;
+  margin-left: 25%;
+}
+main > section:nth-child(1) {
+  color: #ffffff;
+  padding: 4rem;
+  font-size: 14px;
+}
+main > section:nth-child(1) h1 {
+  font-weight: normal;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+main > section {
+  padding: 2rem 4rem 0 4rem;
+  background-color: #ffffff;
+}
+main > section .formation {
+  border-left: 1px solid #343b40;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+main > section .formation > p:nth-child(2) {
+  margin-top: 0.3rem;
+}
+main > section .jobs {
+  border-left: 1px solid #343b40;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+main > section .jobs > p:nth-child(1) {
+  margin-top: 0.3rem;
+}
+main > section .jobs li {
+  font-size: 14px;
+  margin-top: 0.2rem;
+}
+
+.profile-photo {
+  width: 65%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+}
+.profile-photo > img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  box-shadow: 0 0 5px #000;
+  border: 2px solid #058e6e;
+}
+
+hr {
+  height: 3px;
+  background-color: #343b40;
+  border: none;
+}
+
+.bar-meter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bar-meter > div:nth-child(2) {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 5px;
+  border-bottom: 10px;
+  background-color: #ffffff;
+}
+.bar-meter > div:nth-child(2) > div {
+  width: calc((100% / 6) * 4);
+  height: 100%;
+  background-color: #058e6e;
+}
+
+.presentation {
+  padding: 1rem;
+}
+.presentation h2 {
+  font-weight: normal;
+  align-items: center;
+  font-size: 2.2rem;
+  margin: 1rem 0;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 680px) {
+  *[mobile] {
+    display: block;
+  }
+
+  *[not-mobile] {
+    display: none;
+  }
+
+  aside {
+    position: initial;
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    margin: 0;
+  }
+  main > section:nth-child(1) {
+    padding: 2rem;
+    font-size: 16px;
+  }
+  main > section {
+    padding: 2rem;
+  }
+}
+
+/*# sourceMappingURL=curriculum.css.map */
