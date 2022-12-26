@@ -106,7 +106,7 @@ aside h1, aside h2, aside h3, aside h4, aside h5, aside h6, main h1, main h2, ma
 }
 
 aside {
-  width: 25%;
+  width: 20%;
   background-color: #cde8e2;
   position: fixed;
   left: 0;
@@ -133,8 +133,8 @@ aside > section li * {
 }
 
 main {
-  width: 75%;
-  margin-left: 25%;
+
+  margin-left: 20%;
 }
 main > section:nth-child(1) {
   color: #ffffff;
